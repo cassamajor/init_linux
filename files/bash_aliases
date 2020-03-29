@@ -1,0 +1,12 @@
+alias ipify='curl -L api.ipify.org'
+alias activate='source venv/bin/activate'
+alias global_activate='source ~/code/venv3/bin/activate'
+alias update='sudo apt update && sudo apt full-upgrade -y'
+alias remove='sudo apt autoremove -y'
+alias backup='~/disk.sh'
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+alias dvwa="sudo systemctl start docker && docker run --rm -it -p 80:80 vulnerables/web-dvwa"
+alias ll="ls -1A"
+lk() { builtin cd "$*" && ls -1; }
+dl() { aria2c -c -x 8 "$*"; }
